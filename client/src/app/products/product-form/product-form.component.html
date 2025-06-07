@@ -1,0 +1,17 @@
+<form class="row" [formGroup]="service.productForm" (submit)="onSubmit()" [class.submitted]="submitted">
+    <div class="col-12 mb-3">
+        <label class="form-label">Nome</label>
+        <input class="form-control form-control-lg" placeholder="Informe o nome do produto" formControlName="name">
+    </div>
+    <div class="col-12 mb-3">
+        <label class="form-label">Descrição</label>
+        <input class="form-control form-control-lg" placeholder="Informe a descrição do produto" formControlName="description">
+    </div>
+    <div class="col-6 mb-3">
+        <label class="form-label">Preço</label>
+        <input class="form-control form-control-lg" placeholder="Informe o valor do produto" formControlName="price">
+    </div>
+    <div class="col-12 d-grid">
+        <button class="btn btn-lg btn-primary" type="submit">Salvar</button>
+    </div>
+</form>

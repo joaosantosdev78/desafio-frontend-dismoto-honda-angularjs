@@ -1,0 +1,34 @@
+<div class="text-bg-dark text-center rounded-bottom py-4">
+    <h1 class="display-4">
+        Cadastro de produtos
+    </h1>
+</div>
+<div class="p-4">
+    <div class="row">
+        <div class="col-md-6">
+            <app-product-form></app-product-form>
+        </div>
+        <div class="col-md-6">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Descrição</th>
+                        <th>Preço</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let pro of service.list">
+                        <td (click)="populateForm(pro)">{{pro.name}}</td>
+                        <td (click)="populateForm(pro)">{{pro.description}}</td>
+                        <td (click)="populateForm(pro)">{{pro.price}}</td>
+                        <td>
+                            <i class="far fa-trash-alt fa-lg text-secondary" (click)="onDelete(pro.id)"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
