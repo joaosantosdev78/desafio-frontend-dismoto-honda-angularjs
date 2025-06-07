@@ -21,7 +21,7 @@ git clone https://github.com/joaosantosdev78/desafio-frontend-dismoto-honda-angu
 2. Acesse o diretório do projeto:
 
 ```bash
-cd desafio-backend-dismoto-honda-nodejs
+cd desafio-frontend-dismoto-honda-angularjs
 ```
 
 2. Acesse o diretório do projeto:
